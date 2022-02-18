@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+}
+
+.tab {
+  background: #eef1fa;
+  padding: 30px 0px 28px 15px;
+  border-bottom: 2px solid #e2e3e7;
+}
+
+.tab-calendar {
+  padding: 20px;
+}
+
+.tab-button {
+  background: none;
+  border-radius: 15px;
+  height: 30px;
+  border: none;
+  color: #98b3d0;
+  width: 80px;
+}
+
+.tab-event {
+  flex-grow: 1;
+}
+
+.tab-button.selected {
+  border: #98b3d0 1px solid;
+  background: #98b3d0;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+}
+
+.softcard {
+  width: 316px;
+  height: fit-content;
+  /* border-radius: 20px;
+  box-shadow: 0px 0px 10px #000; */
+}
+
+.calendar-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 5px;
+}
+
+.calendar-header {
+  justify-content: space-between;
+  display: flex;
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+.calendar-bar > .current-month {
+  font-size: 15pt;
+  font-weight: bold;
+  color: #292b44;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+[class$="soft-btn"] {
+  width: 40px;
+  /* aspect-ratio: 1; */
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.weekdays-name,
+.calendar-days {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 18px;
+}
+.weekdays-name {
+  padding-top: 0px;
+  border-bottom: 2px solid #e2e3e7;
+}
+
+.calendar-days {
+  padding-bottom: 12px;
+}
+
+.days-name,
+[class$="-day"] {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  color: #292b44;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 9pt;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days-name {
+  color: #98b3d0;
+  font-size: 10pt;
+}
+
+.current-day {
+  background-color: #000;
+  color: #98b3d0;
+  border-radius: 50%;
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.padding-day {
+  color: #a5a5a5;
+  user-select: none;
+}
+
+.calendar-bar > [class$="soft-btn"]:hover,
+.month-day:hover,
+.btn:hover {
+  border-radius: 5px;
+  background-color: #f8f7fa;
+  color: #000;
+  border-radius: 15px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.calendar-bar > [class$="soft-btn"]:focus,
+.month-day:focus,
+.btn:focus {
+  border-radius: 15px;
+  background-color: #000;
+  color: #ddd;
+}
+
+.tab-account {
+  display: flex;
+}
+
+.tab-account > .account {
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  font-size: 15pt;
+  font-weight: bold;
+  color: #e2e3e7;
+  border-bottom: 2px solid #e2e3e7;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-account > .account.active {
+  color: #292b44;
+  border-color: #292b44;
+}
