@@ -2,6 +2,22 @@ body {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul span {
+  color: black;
+}
+
 .tab {
   background: #eef1fa;
   padding: 30px 0px 28px 15px;
@@ -18,7 +34,8 @@ body {
   height: 30px;
   border: none;
   color: #98b3d0;
-  width: 80px;
+  width: 120px;
+  font-size: 20pt;
 }
 
 .tab-event {
@@ -166,4 +183,14 @@ body {
 .tab-account > .account.active {
   color: #292b44;
   border-color: #292b44;
+}
+
+.filter button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color:#98b3d0;
+  color: #fff;
+  font-size: 20px
 }
