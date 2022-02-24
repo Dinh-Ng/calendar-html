@@ -1,0 +1,31 @@
+.fc-v-event {
+    background-color: #fafafa;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid #000;
+}
+
+.fc-event-title {
+    color: #000;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.fc .fc-timegrid-col.fc-day-today {
+    background-color: #f3fbfe;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: #f3fbfe;
+}
+
+.fc-h-event {
+    background-color: #3788d836;
+    border: none;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.fc .fc-daygrid-day-top {
+    justify-content: center;
+}

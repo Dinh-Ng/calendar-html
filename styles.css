@@ -2,11 +2,15 @@ body {
   margin: 0;
 }
 
-ul {
+.list-checkbox {
   list-style: none;
 }
 
-ul li::before {
+.list-checkbox li {
+  justify-content: space-around;
+}
+
+.list-checkbox li::before {
   content: "\2022";
   font-weight: bold;
   display: inline-block;
@@ -14,8 +18,9 @@ ul li::before {
   margin-left: -1em;
 }
 
-ul span {
-  color: black;
+.list-checkbox span {
+  color: #98b3d0;
+  font-size: 14pt;
 }
 
 .tab {
